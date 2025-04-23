@@ -1,4 +1,4 @@
-FROM almalinux/9-base
+FROM almalinux:9
 RUN dnf install nginx -y 
 RUN rm -rf /usr/share/nginx/html/index.html
 #this onbuild instruction runs only, when any user uses your image
